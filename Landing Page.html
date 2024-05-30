@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Bakery</title>
+    <link rel="stylesheet" href="styles.css">
+    <style type="text/css">
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #f8b400;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+header nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+section {
+    padding: 2em;
+    text-align: center;
+}
+
+.product-list {
+    display: flex;
+    justify-content: center;
+    gap: 2em;
+}
+
+.product-item {
+    border: 1px solid #ddd;
+    padding: 1em;
+    border-radius: 5px;
+}
+
+.product-item img {
+    max-width: 100%;
+    height: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 1em;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+form button {
+    background-color: #f8b400;
+    color: white;
+    border: none;
+    padding: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #e0a800;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Sweet Delights Bakery</h1>
+        <p>Your one-stop shop for delicious baked goods!</p>
+    </header>
+
+    <section id="products">
+        <h2>Our Featured Products</h2>
+        <div class="product-list">
+            <div class="product-item">
+                <img src="cake.jpg" alt="Delicious Cake">
+                <h3>Delicious Cake</h3>
+                <p>$25.00</p>
+            </div>
+            <div class="product-item">
+                <img src="cookies.jpg" alt="Yummy Cookies">
+                <h3>Yummy Cookies</h3>
+                <p>$10.00</p>
+            </div>
+            <div class="product-item">
+                <img src="bread.jpg" alt="Fresh Bread">
+                <h3>Fresh Bread</h3>
+                <p>$5.00</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>Welcome to Sweet Delights Bakery! We are dedicated to bringing you the freshest and most delicious baked goods made from high-quality ingredients. Our passion for baking is evident in every bite you take.</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Sweet Delights Bakery. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
