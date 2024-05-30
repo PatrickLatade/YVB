@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="images/Media.png">
+    <title>Media</title>
+</head>
+<body>
+    <h1>Media</h1>
+    <a href="Home.html"><b>Home Page</b></a> 
+    <a href="photos.html"><b>Photos Page</b></a> 
+    <a href="practice.html"><b>Main Page</b></a>
+    <hr>
+    <h4>This contains media files</h4>
+    <p><b><u>SG brand emotion</u></b></p>
+    <p><i>This uses video tag</i></p>
+    
+    <video width="720" height="360" controls autoplay muted>
+        <source src="images/SG BRAND EMOTIONS ADS.mp4" type="video/mp4"></source>
+    </video>
+
+    <p><b><u>Lola Amour - Raining in Manila</u></b></p>
+    <p><i>This uses an audio tag</i></p>
+
+    <audio controls>
+        <source src="images/Lola Amour - Raining in Manila (Official Lyric Video).mp3" type="audio/mpeg"></source>
+    </audio>
+
+    <p><b><u>An elf makes a friend?</u></b></p>
+    <p><i>Video embedding</i></p>
+
+    <iframe src="https://www.youtube.com/embed/4dWMJUzczvc?si=2HlSkvNXnJyd338w?autoplay=1&mute=1" frameborder="0" width="720" height="360"></iframe>
+    <hr>
+    <h2>Forms</h2>
+    <p><b>Please answer the form below</b></p>
+    <fieldset>
+    <legend>Personal Info</legend>
+    <label for="first_name">First Name</label>
+    <input type="text" id="first_name" name="first_name" autofocus>
+    <br>
+    <label for="second_name">Last Name</label>
+    <input type="text" id="second_name" name="second_name">
+    <br>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password">
+    <br>
+    <label for="Education">Education</label>
+    <select name="" id="" size="2" multiple>
+        <option value="Gradeschool">Gradeschool Graduate</option>
+        <option value="Highschool">Highschool Graduate</option>
+        <option value="Senior">Senior High School Graduate</option>
+        <option value="College" selected>College Graduate</option>
+    </select>
+    <br>
+    <label for="">Choose your favorite browser</label>
+    <input list="browsers">
+    <datalist id="browsers">
+        <option value="Edge"></option>
+        <option value="Chrome"></option>
+        <option value="Safari"></option>
+    </datalist>
+    <br>
+    <label for="">Message</label>
+    <textarea name="" id="" cols="15" rows="5"></textarea>
+    </fieldset>
+    <br>
+    <button type="button">Submit</button>
+    <hr>
+    <fieldset>
+        <legend>Other info</legend>
+        <input type="submit" name="subit_btn" id="Save">
+        <input type="reset" name="reset_btn" id="Reset">
+        <br>
+        <label for="">Gender</label>
+        <input type="radio" name="gender" value="male" checked>Male
+        <input type="radio" name="gender" value="female">Female
+        <br>
+        <label for="">Favorite Board Game</label>
+        <input type="checkbox" name="Board" value="jaipur">Jaipur
+        <input type="checkbox" name="Board" value="splendor">Splendor
+        <input type="checkbox" name="Board" value="monopoly">Monopoly
+        <input type="checkbox" name="Board" value="targi">Targi
+        <br>
+        <label for="color">Favorite Color</label>
+        <input type="color" id="color" name="color">
+        <br>
+        <label for="">Birthday</label>
+        <input type="date" name="dob" min="2002-01-01" max="2030-01-01">
+        <br>
+        <label for="">Birthday</label>
+        <input type="datetime-local" name="dob" min="2002-01-01" max="2030-01-01">
+        <br>
+        <label for="">Email</label>
+        <input type="email">
+        <br>
+        <label for="">Upload files</label>
+        <input type="file">
+        <br>
+        <input type="hidden" value="1">
+        <br>
+        <label for="">Select month</label>
+        <input type="month" name="month">
+        <br>
+        <label for="">Marks</label>
+        <input type="number" min="50" max="100" value="75">
+        <br>
+        <input type="range">
+        <br>
+        <label for="">Search</label>
+        <input type="search">
+        <br>
+        <label for="">Phone</label>
+        <input type="tel">
+        <br>
+        <label for="">Time</label>
+        <input type="time">
+        <br>
+        <label for="">URL</label>
+        <input type="url">
+        <br>
+        <label for="">Week</label>
+        <input type="week">
+        <br>
+        <label for="">Image</label>
+        <input type="image" src="images/wildrift.jpg" width="48" alt="submit">
+        <br>
+        <label for="">Theme</label>
+        <input type="text" value="Space,Wild West,etc." size="15">
+        <br>
+        <label for="">Origins</label>
+        <input type="text" value="RiotGames INC." readonly size="10">
+        <br>
+        <label for="">Not applicable</label>
+        <input type="text" value="None" disabled>
+        <br>
+        <label for="">Acronym for Philippine Peso</label>
+        <input type="text" maxlength="3">
+        <br>
+        <label for="">Team</label>
+        <input type="text" placeholder="Blue,Black, and Brown" size="15" required autocomplete="on">
+        <input type="submit">
+    </fieldset>
+</body>
+</html>
